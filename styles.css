@@ -6,7 +6,7 @@
 }
 
 body {
-  background: var(--color-secondary, white);
+  background: var(--color-secondary, rgb(255, 255, 255));
 
   font-family: "Noto Sans", sans-serif;
 }
@@ -51,44 +51,74 @@ iframe {
 
 /* your styles here */
 
+h2 {
+  font-size: 200%;
+}
+
+p {
+  font-size: 160%;
+}
+
 .allCardsWrapper {
   height: 100vh;
   width: 100vw;
   display: block;
 }
 
-.singleCardWrapper{
-  display:flex;
+.singleCardWrapper {
+  margin-top:3vh;
+  display: flex;
   width: 100vw;
   justify-content: center;
   align-items: center;
 }
 
-.singleCard{
-  display:block;
-  width:90vw;
+.singleCard {
+  display: block;
+  width: 90vw;
+  background-color:rgba(255, 255, 255, 0.753);}
+
+.imageContainer {
+  position: relative;
 }
 
-.imageContainer{
-  position:relative;
+img {
+  width: 100%;
 }
 
-img{
-  width:100%;
+figcaption {
+  width: 6em;
+  background-color: var(--color-secondary);
+  position: absolute;
+  bottom: 8px;
+  left: 40px;
+  font-size: 1.5em;
 }
 
-figcaption{
-  width:6em;
-   background-color: var(--color-secondary);
-   position:absolute;
-   bottom:8px;
-   left:16px;
-   font-size: 1.5em;
+.articleWrapper {
+  display: block;
+  width: 90vw;
 }
 
+main {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
 
+button {
+  border-radius: 5px;
+  border: none;
+  text-align: left;
+  padding-left: 30px;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  width: 40vw;
+  height: 2.5em;
+  font-size: 2em;
+}
 
-/* button {
-  text-align: center;
-  color:red;
-} */
+button:hover {
+  background-color: red;
+}
