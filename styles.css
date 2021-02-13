@@ -189,11 +189,11 @@ button:hover {
     height: 25vh;
     width: 40vw;
   }
-
   figcaption {
-    width: 6em;
-    background-color: var(--color-secondary);
-    position: absolute;
+    top: initial;
+    right: initial;
+    left: 8px;
+    font-size: 1em;
   }
 
   .articleWrapper {
