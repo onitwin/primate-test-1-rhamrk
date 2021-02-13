@@ -164,17 +164,17 @@ button:hover {
   }
 }
 
-
-
-
-
-
-
-
-
 @media only screen and (min-device-width: 768px) {
+  .allCardsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+    overflow: scroll;
+  }
+
   .singleCard {
-    margin-top: 3em;
+    margin: unset;
+    margin: 3em;
     display: block;
     width: 40vw;
     height: 60vh;
