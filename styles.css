@@ -50,9 +50,7 @@ iframe {
 }
 
 /* your styles here */
-///////////////////////////////////////////
-///////////////////////////////////////////smallest size/default/////////////
-///////////////////////////////////////
+
 h2 {
   font-size: 200%;
 }
@@ -67,15 +65,13 @@ p {
   display: block;
 }
 
-
 .singleCard {
   display: block;
   width: 90vw;
-  background-color:rgba(255, 255, 255, 0.753);
-  margin-top:3em;
+  background-color: rgba(255, 255, 255, 0.753);
+  margin-top: 3em;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .imageContainer {
@@ -107,7 +103,6 @@ main {
   margin-bottom: 1rem;
 }
 
-
 button {
   border-radius: 5px;
   border: none;
@@ -124,116 +119,49 @@ button:hover {
   background-color: red;
 }
 
-///////////////////////////////////////////////
-////////////2nd size up///////////////////////
-///////////////////////////////////////////////
-@media screen and (min-device-width:414px){
-  body{
-   background-color:red;
- } 
+@media screen and (min-device-width: 414px) {
+  .singleCard {
+    display: flex;
+    width: 90vw;
+    height: 25vh;
+    background-color: rgba(255, 255, 255, 0.753);
+  }
 
-.singleCard {
-  display: flex;
-  width: 90vw;
-  height:25vh;
-  background-color:rgba(255, 255, 255, 0.753);
-}
+  img {
+    height: 25vh;
+    width: 45vw;
+  }
 
-img {
-  height:25vh;
-  width: 45vw;
-}
+  figcaption {
+    text-align: center;
+    width: 6em;
+    height: 1.2em;
+    background-color: var(--color-secondary);
+    position: absolute;
+    top: 30px;
+    left: 70%;
+    font-size: 1em;
+  }
 
-figcaption {
-  text-align:center;
-  width: 6em;
-  height:1.2em;
-  background-color: var(--color-secondary);
-  position: absolute;
-  top:30px;
-  left:70%;
-  font-size: 1em;;
-}
+  .articleWrapper {
+    display: block;
+    width: 50vw;
+  }
 
-.articleWrapper {
-  display: block;
-  width: 50vw;
-}
+  main {
+    width: 40vw;
+    height: 25vh;
+  }
 
-main {
-  width: 40vw;
-  height:25vh;
-}
+  p {
+    font-size: 1.1em;
+  }
 
-p{
-  font-size:1.1em;
-}
-
-button {
-  width: 20vw;
-  height: 2.5em;
-  font-size: 1em;
-}
-
-
-
-
-}
-
-
-////////////////////////////////////
-/////3rd size up///////////////////
-//////////////////////////////////
-
-@media only screen and (min-device-width: 768px){
- body{
-   background-color:blue;
-   display:flex;
-   flex-direction: row;
-
- } 
-
-
-.singleCard {
-  margin-top:3em;
-  display: block;
-  width: 40vw;
-  height:60vh;
-  background-color:rgba(255, 255, 255, 0.753);
-}
-
-img {
-  height:25vh;
-  width: 40vw;
-}
-
-figcaption {
-  width: 6em;
-  background-color: var(--color-secondary);
-  position: absolute;
-  bottom: 8px;
-  left: 40px;
-  font-size: 1.5em;
-}
-
-.articleWrapper {
-  display: block;
-  width: 50vw;
-}
-
-main {
-  width: 40vw;
-  height:25vh;
-}
-
-p{
-  font-size:0.9em;
-}
-
-button {
-  width: 20vw;
-  height: 2.5em;
-  font-size: 1em;
+  button {
+    width: 20vw;
+    height: 2.5em;
+    font-size: 1em;
+  }
 }
 
 
@@ -242,12 +170,54 @@ button {
 
 
 
+
+
+@media only screen and (min-device-width: 768px) {
+  .singleCard {
+    margin-top: 3em;
+    display: block;
+    width: 40vw;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.753);
+  }
+
+  img {
+    height: 25vh;
+    width: 40vw;
+  }
+
+  figcaption {
+    width: 6em;
+    background-color: var(--color-secondary);
+    position: absolute;
+    bottom: 8px;
+    left: 40px;
+    font-size: 1.5em;
+  }
+
+  .articleWrapper {
+    display: block;
+    width: 50vw;
+  }
+
+  main {
+    width: 40vw;
+    height: 25vh;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  button {
+    width: 20vw;
+    height: 2.5em;
+    font-size: 1em;
+  }
 }
 
-
-@media only screen and (min-device-width: 1224px){
- body{
-   background-color:green;
-
- } 
+@media only screen and (min-device-width: 1224px) {
+  body {
+    background-color: green;
+  }
 }
