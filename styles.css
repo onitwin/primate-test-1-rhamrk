@@ -52,11 +52,11 @@ iframe {
 /* your styles here */
 
 h2 {
-  font-size: 2.5em;
+  font-size: 3.5em;
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.4rem;
 }
 
 .allCardsWrapper {
@@ -76,7 +76,6 @@ p {
 
 .imageContainer {
   position: relative;
-  border: 1px solid red;
 }
 
 img {
@@ -84,31 +83,30 @@ img {
 }
 
 figcaption {
+  text-align: center;
   width: 6em;
   background-color: var(--color-secondary);
   position: absolute;
   bottom: 1em;
   left: 2em;
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 .articleWrapper {
   display: block;
   width: 100%;
-  height: 50vh;
-  border: 1px solid black;
+  height: 40vh;
 }
 
 main {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1rem;
-  border: 1px solid red;
+  height: 100%;
 }
 
 article {
-  height: 80%;
+  height: 65%;
   overflow: scroll;
 }
 
@@ -116,8 +114,7 @@ button {
   margin-top: 1em;
   border-radius: 5px;
   border: none;
-  text-align: left;
-  padding-left: 30px;
+  text-align: center;
   background-color: var(--color-primary);
   color: var(--color-secondary);
   width: 40vw;
@@ -130,23 +127,29 @@ button:hover {
 }
 
 @media screen and (min-device-width: 414px) {
+  h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  body {
+    background-color: blue;
+  }
+
   .singleCard {
     display: flex;
     width: 90vw;
-    height: 25vh;
+    height: 27vw;
     background-color: rgba(255, 255, 255, 0.753);
   }
 
   img {
-    height: 25vh;
-    width: 45vw;
+    width: 40vw;
   }
 
   figcaption {
-    text-align: center;
     width: 6em;
     height: 1.2em;
-    background-color: var(--color-secondary);
     position: absolute;
     top: 30px;
     left: 70%;
@@ -154,13 +157,14 @@ button:hover {
   }
 
   .articleWrapper {
-    display: block;
+    display: flex;
     width: 50vw;
+    height: 100%;
   }
 
-  main {
-    width: 40vw;
-    height: 25vh;
+  article {
+    height: 60%;
+    overflow: scroll;
   }
 
   p {
@@ -174,7 +178,7 @@ button:hover {
   }
 }
 
-@media only screen and (min-device-width: 768px) {
+/* @media only screen and (min-device-width: 768px) {
   .allCardsWrapper {
     display: flex;
     flex-wrap: wrap;
@@ -230,4 +234,4 @@ button:hover {
   body {
     background-color: green;
   }
-}
+} */
