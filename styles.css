@@ -126,14 +126,13 @@ button:hover {
   background-color: red;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-device-width: 375px) {
+  body {
+    background-color: red;
+  }
   h2 {
     font-size: 1.5rem;
     margin: 0;
-  }
-
-  body {
-    background-color: blue;
   }
 
   .singleCard {
@@ -178,7 +177,7 @@ button:hover {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-device-width: 768px) {
   body {
     background-color: gold;
   }
@@ -190,11 +189,10 @@ button:hover {
   }
 
   .singleCard {
-    margin: unset;
     margin: 3em;
     display: block;
     width: 40vw;
-    height: 55vh;
+    height: 90vh;
     background-color: rgba(255, 255, 255, 0.753);
   }
 
@@ -236,7 +234,7 @@ button:hover {
   }
 }
 
-@media only screen and (min-width: 1224px) {
+@media screen and (min-device-width: 1224px) {
   body {
     background-color: green;
   }
