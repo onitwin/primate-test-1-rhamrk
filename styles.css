@@ -105,9 +105,8 @@ figcaption {
   text-align: center;
 }
 
-
 /* container for text elements- header, article and button */
-.articleContainer{
+.articleContainer {
   display: block;
   width: 100%;
   height: 40vh;
@@ -148,7 +147,6 @@ button:hover {
   transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2);
 }
-
 
 /* larger device settings - 375 to 767*/
 @media screen and (min-device-width: 375px) {
@@ -280,7 +278,7 @@ button:hover {
     margin-right: 1em;
   }
 
-  .articleContainer{
+  .articleContainer {
     display: block;
     width: 100%;
     height: 100%;
