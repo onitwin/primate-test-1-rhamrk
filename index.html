@@ -15,7 +15,54 @@
 			src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FRnIqRqQeKZ66EhJ91pyWOK%2FPrimate-Test-Task%3Fnode-id%3D0%253A1"
 			allowfullscreen></iframe> -->
 
-		<!-- single container for applying conditions to all cards-->
+		
+		<!--
+      Welcome to your Be a Developer at Primate Exercise.
+      
+      Please fork this project so you can work on your own version.
+      ---
+      
+      This exercise will give you an idea of the type of work we do at Primate on a daily basis.
+
+      The exercise consists of two tasks:
+      1. Building the Card component (HTML and CSS).
+      2. Creating a responsive Listing of 5 or 6 Cards that changes its look depending on the screen size (HTML and CSS).
+
+      The attached iframe is a reference to a mock-up of how the cards should look like in both versions: vertical (mobile) and horizontal (desktop). 
+
+      The list should behave so you can see:
+      - two horizontal (desktop) cards in a row on a 'large' screen
+      - two vertical (mobile) cards in one row on a 'medium' screen
+      - one horizontal (desktop) card on a 'small' screen
+      - one vertical (mobile) card for evertyhing smaller than that
+      (you probably want to build mobile first so work through this list from bottom to top)
+
+      You should be able to achieve it using flexbox but we're open to other ideas.
+      For images you can use anything you want, we would recommend: https://source.unsplash.com/.
+
+      Optional, if you're brave:
+      - you can add some hover animation to the Button
+      
+      Most of the CSS for Card is set up in the style.css file, but you need to come up with the breakpoints for Listing and of course create the HTML structure for the Card.
+      We care deeply about the valid and semantic HTML, so make sure the tags you are using make sense.
+
+      Spend as much time on it as you wish, but we don't expect you to take more than 2h. Most likely you won't have time to do everything in this timeframe, that's absolutely OK too. The most important is staying on the right track and focusing on what's important.
+
+      If you want to leave us some comments about this task, explain your decisions, tell us what you enjoyed or hated, please use the HTML comments in one of the files.
+
+      As final submission, please email a link to your own project fork to jobs@primate.co.uk and include your name somewhere.
+
+      We would normally do this exercise in our office and in person but times are different now, so hopefully we'll see you on video chat soon.
+
+      Thank you again for taking time to do this exercise, we really appreciate it.
+
+      ---
+      Good luck and ...
+      ~ happy coding
+    -->
+
+		<!-- your code here -->
+    <!-- single container for applying conditions to all cards-->
 		<div class="allCardsWrapper">
 
 			<!-- individual card-->
@@ -190,53 +237,21 @@
 
 		</div>
 
-		<!--
-      Welcome to your Be a Developer at Primate Exercise.
-      
-      Please fork this project so you can work on your own version.
-      ---
-      
-      This exercise will give you an idea of the type of work we do at Primate on a daily basis.
-
-      The exercise consists of two tasks:
-      1. Building the Card component (HTML and CSS).
-      2. Creating a responsive Listing of 5 or 6 Cards that changes its look depending on the screen size (HTML and CSS).
-
-      The attached iframe is a reference to a mock-up of how the cards should look like in both versions: vertical (mobile) and horizontal (desktop). 
-
-      The list should behave so you can see:
-      - two horizontal (desktop) cards in a row on a 'large' screen
-      - two vertical (mobile) cards in one row on a 'medium' screen
-      - one horizontal (desktop) card on a 'small' screen
-      - one vertical (mobile) card for evertyhing smaller than that
-      (you probably want to build mobile first so work through this list from bottom to top)
-
-      You should be able to achieve it using flexbox but we're open to other ideas.
-      For images you can use anything you want, we would recommend: https://source.unsplash.com/.
-
-      Optional, if you're brave:
-      - you can add some hover animation to the Button
-      
-      Most of the CSS for Card is set up in the style.css file, but you need to come up with the breakpoints for Listing and of course create the HTML structure for the Card.
-      We care deeply about the valid and semantic HTML, so make sure the tags you are using make sense.
-
-      Spend as much time on it as you wish, but we don't expect you to take more than 2h. Most likely you won't have time to do everything in this timeframe, that's absolutely OK too. The most important is staying on the right track and focusing on what's important.
-
-      If you want to leave us some comments about this task, explain your decisions, tell us what you enjoyed or hated, please use the HTML comments in one of the files.
-
-      As final submission, please email a link to your own project fork to jobs@primate.co.uk and include your name somewhere.
-
-      We would normally do this exercise in our office and in person but times are different now, so hopefully we'll see you on video chat soon.
-
-      Thank you again for taking time to do this exercise, we really appreciate it.
-
-      ---
-      Good luck and ...
-      ~ happy coding
-    -->
-
-		<!-- your code here -->
 	</div>
 </body>
 
 </html>
+
+<!--Hi, just wanted to explain some of my decisions in the above code. 
+I first set an outside cointainer to allow easy css targetting for setting flex/block display styles for the contents (contents being 6 individial cards)
+Each card has its own container (again to target for arranging display style), with two containers inside- one to arrange elements related to image, the next to arrange elements related to the text and descriptions- these form the top/bottom or left/right portions of each card depending on display size. 
+
+The Image container is only ever block, and holds one <img> and one <figcaption>. The caption is positioned using absolute positioning to overlay across the top of the image. I considered using the background-image css property, but felt that I would lose out on the semantic html benefits of the <img> tag. The image itself I only ever gave a width value so that the height would automatically scale and never look stretched or squeezed. This gave me issues with the 'singleCard' container, which would have benefitted from a set value for height as at certain scales the container becomes too large in order to fit the scaled up article components. While I am confident I could have resolved this eventually, I felt other areas would benfit from the attention more. 
+
+The article container is also display block, as the contents never change their relationship to one another. As mentioned, at certain sizes they push the container, but I am confident I could resolve with some more time/guidance. As suggested, I added a hover effect to the button, expanding the button and inverting the colors. I was unable to impliment the svg to my satisfaction (it displaced the button text too much) so I left it out for now rather than implement something I was unhappy with. 
+
+It took me a while to find CSS breakpoints I was happy with- initially using (min-width) and finding it unresponsive I switched to (min-device-width). This works perfectly in the devtools, both when targetting specific devices and when using the responsive setting but not when applied to my own display, although this is in part due to the excessive width of that display which is 1920x1080
+
+I really enjoyed the excercise- arranging the cards I found very straightforward, but I had to work more with the scaling of objects inside the cards. I learned a lot while working through the excercise I will be able to make benefit of frequently. Thanks for the opportunity.
+
+-->
