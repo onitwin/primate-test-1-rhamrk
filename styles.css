@@ -83,13 +83,20 @@ img {
 }
 
 figcaption {
-  text-align: center;
-  width: 6em;
-  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: none;
+  width: 100%;
   position: absolute;
   bottom: 1em;
-  left: 2em;
-  font-size: 2.5em;
+}
+
+.captionText {
+  background-color: var(--color-secondary);
+  font-size: 2em;
+  margin-left: 1em;
+  text-align: center;
 }
 
 .articleWrapper {
@@ -147,12 +154,13 @@ button:hover {
   }
 
   figcaption {
-    width: 6em;
-    height: 1.2em;
-    position: absolute;
-    top: 30px;
-    left: 70%;
-    font-size: 1em;
+    justify-content: flex-end;
+    margin-bottom: 50%;
+  }
+
+  .captionText {
+    font-size: 0.9em;
+    margin-right: 1em;
   }
 
   .articleWrapper {
@@ -181,11 +189,13 @@ button:hover {
   .allCardsWrapper {
     display: flex;
     flex-wrap: wrap;
+    align-items: space-between;
     overflow: scroll;
   }
 
   .singleCard {
     margin: 3em;
+    margin-bottom: 6em;
     display: block;
     width: 40vw;
     height: 50vh;
@@ -196,10 +206,13 @@ button:hover {
   }
 
   figcaption {
-    top: initial;
-    right: initial;
-    left: 8px;
+    justify-content: flex-start;
+    margin-bottom: 1%;
+  }
+
+  .captionText {
     font-size: 1em;
+    margin-right: 1em;
   }
 
   .articleWrapper {
@@ -234,6 +247,7 @@ button:hover {
     display: flex;
     width: 42%;
     height: 14vw;
+    margin-bottom: 1em;
   }
 
   img {
@@ -241,14 +255,13 @@ button:hover {
   }
 
   figcaption {
-    width: 6em;
-    height: 1.2em;
-    position: absolute;
-    bottom: initial;
-    right: initial;
-    top: 10%;
-    left: 60%;
-    font-size: 1em;
+    justify-content: flex-end;
+    margin-bottom: 45%;
+  }
+
+  .captionText {
+    font-size: 0.9em;
+    margin-right: 1em;
   }
 
   .articleWrapper {
