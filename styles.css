@@ -50,7 +50,7 @@ iframe {
 }
 
 /* your styles here */
-
+/* set basic font sizes */
 h2 {
   font-size: 3.5em;
 }
@@ -59,12 +59,14 @@ p {
   font-size: 1.4rem;
 }
 
+/* container for all items- used for positioning as flex or block */
 .allCardsWrapper {
   height: 100vh;
   width: 100vw;
   display: block;
 }
 
+/* single card instance- contains two divs- imageContainer and articleContainer */
 .singleCard {
   display: block;
   width: 90vw;
@@ -74,14 +76,17 @@ p {
   margin-right: auto;
 }
 
+/* container to hold image and caption.Given relative position to aid captions absolute position */
 .imageContainer {
   position: relative;
 }
 
+/* given width but no height- allow image to set its own height and avoid stretching/squashing image */
 img {
   width: 100%;
 }
 
+/* full width of image container- absolute position and moved overtop of image. Justify content to align to left or right as needed */
 figcaption {
   display: flex;
   justify-content: flex-start;
@@ -92,6 +97,7 @@ figcaption {
   bottom: 1em;
 }
 
+/* text contained within figcaption */
 .captionText {
   background-color: var(--color-secondary);
   font-size: 2em;
@@ -99,12 +105,15 @@ figcaption {
   text-align: center;
 }
 
-.articleWrapper {
+
+/* container for text elements- header, article and button */
+.articleContainer{
   display: block;
   width: 100%;
   height: 40vh;
 }
 
+/* used to align contents without breakeing article container */
 main {
   width: 90%;
   margin-left: auto;
@@ -112,11 +121,13 @@ main {
   height: 100%;
 }
 
+/* text element- overflow set to allow indefinate content */
 article {
   height: 65%;
   overflow: scroll;
 }
 
+/* button styled to match defined colours */
 button {
   margin-top: 1em;
   border-radius: 5px;
@@ -129,6 +140,7 @@ button {
   font-size: 2em;
 }
 
+/* hover effect inverts colours and increases size of button */
 button:hover {
   border: 1px solid var(--color-primary);
   background-color: var(--color-secondary);
@@ -137,6 +149,8 @@ button:hover {
   -webkit-transform: scale(1.2, 1.2);
 }
 
+
+/* larger device settings - 375 to 767*/
 @media screen and (min-device-width: 375px) {
   h2 {
     font-size: 1.5rem;
@@ -163,7 +177,7 @@ button:hover {
     margin-right: 1em;
   }
 
-  .articleWrapper {
+  .articleContainer {
     display: flex;
     width: 50vw;
     height: 100%;
@@ -185,6 +199,7 @@ button:hover {
   }
 }
 
+/* larger device settings - 768 to 1224*/
 @media screen and (min-device-width: 768px) {
   .allCardsWrapper {
     display: flex;
@@ -215,7 +230,7 @@ button:hover {
     margin-right: 1em;
   }
 
-  .articleWrapper {
+  .articleContainer {
     display: block;
     width: 40vw;
     height: 80%;
@@ -242,6 +257,7 @@ button:hover {
   }
 }
 
+/* larger device settings - 1224 and above*/
 @media screen and (min-device-width: 1224px) {
   .singleCard {
     display: flex;
@@ -264,7 +280,7 @@ button:hover {
     margin-right: 1em;
   }
 
-  .articleWrapper {
+  .articleContainer{
     display: block;
     width: 100%;
     height: 100%;
