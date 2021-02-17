@@ -6,9 +6,13 @@
 # initial wireframe
 
 ![Imgur](https://i.imgur.com/2ZRJThX.jpg)
+# small display
 
 ![Imgur](https://i.imgur.com/KBptjeP.jpg)
+# mid size display
 
 ![Imgur](https://i.imgur.com/MUNVRWO.jpg)
+ # tablet sized display
 
 ![Imgur](https://i.imgur.com/kwxFU0l.jpg)
+# large display
